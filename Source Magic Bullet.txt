@@ -1,0 +1,26 @@
+ENABLE MAGIC BULLET
+ 
+function mbon()
+local t = gg.getRangesList('libUE4.so$');
+local RambOxD = {}
+RambOxD[1] = {}
+RambOxD[1].address = t[1].start + 0x3B65608
+RambOxD[1].flags = gg.TYPE_FLOAT
+RambOxD[1].value  = "75.0"
+gg.setValues(RambOxD)
+gg.toast("ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ ᴇɴᴀʙʟᴇ")
+end
+ 
+ 
+DISABLE MAGIC BULLET
+ 
+function mboff()
+local t = gg.getRangesList('libUE4.so$');
+local RambOxD = {}
+RambOxD[1] = {}
+RambOxD[1].address = t[1].start + 0x3B65608
+RambOxD[1].flags = gg.TYPE_FLOAT
+RambOxD[1].value  = "0.10000000149"
+gg.setValues(RambOxD)
+gg.toast("ᴍᴀɢɪᴄ ʙᴜʟʟᴇᴛ ᴅɪsᴀʙʟᴇ")
+end
